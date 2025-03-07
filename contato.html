@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - TEA Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>TEA Connect</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="conteudo-principal">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas ou sugestões? Entre em contato conosco preenchendo o formulário abaixo:</p>
+            <form action="backend/contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 TEA Connect. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
